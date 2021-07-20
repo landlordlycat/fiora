@@ -1,8 +1,7 @@
 module.exports = {
-    roots: ['./test'],
     preset: 'ts-jest',
-    transform: {
-        '\\.(less|jpg)$': '<rootDir>/jest.transformer.js',
+    moduleNameMapper: {
+        '^.+\\.(css|less|jpg|png|gif|mp3)$': '<rootDir>/jest.transformer.js',
     },
     collectCoverage: true,
     globals: {
